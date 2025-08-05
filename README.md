@@ -54,8 +54,7 @@
 
   <hr>
 
-  <h2>📸 Screenshots</h2>
-  <p>Add screenshots of your Power BI report here to showcase visualizations and interactivity.</p>
+ 
 
   <hr>
 
