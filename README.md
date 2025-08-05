@@ -1,119 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Power BI End-to-End Module</title>
-   
+  <meta charset="UTF-8">
+  <title>Power BI End-to-End Module</title>
+ 
 </head>
 <body>
-    <div class="container">
-        <h1>Power BI End-to-End Project Module</h1>
-        <p><strong>Version:</strong> 1.0</p>
-        <p><strong>Last Updated:</strong> August 2025</p>
 
-        <h2>📌 Overview</h2>
-        <p>This module guides you through building a complete Power BI solution from data ingestion to report publishing. You'll connect to a data source, transform data using Power Query, build interactive visuals, and publish your report to the Power BI Service.</p>
+  <h1>Power BI End-to-End Module</h1>
 
-        <h2>⚙️ Pre-requisites</h2>
-        <ul>
-            <li>Power BI Desktop (latest version)</li>
-            <li>Basic knowledge of data modeling and DAX</li>
-            <li>A Microsoft Power BI account (free or Pro)</li>
-            <li>Sample dataset (e.g., SalesData.csv)</li>
-        </ul>
+  <p>This Power BI module walks you through the complete development lifecycle of a Power BI project — from data ingestion to publishing and sharing reports.</p>
 
-        <h2>🗂️ Dataset Info</h2>
-        <p>Example: <code>SalesData.csv</code> containing the following columns:</p>
-        <ul>
-            <li>OrderID</li>
-            <li>Date</li>
-            <li>Customer</li>
-            <li>Region</li>
-            <li>Product</li>
-            <li>Quantity</li>
-            <li>Price</li>
-            <li>Sales</li>
-        </ul>
+  <hr>
 
-        <h2>🚀 Step-by-Step Instructions</h2>
-        <h3>1. Load the Data</h3>
-        <ul>
-            <li>Open Power BI Desktop</li>
-            <li>Click <strong>Home → Get Data → Text/CSV</strong></li>
-            <li>Select <code>SalesData.csv</code> and click <strong>Load</strong></li>
-        </ul>
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>✅ Data Connections (Excel, SQL Server, APIs)</li>
+    <li>🔄 Data Transformation using Power Query (ETL)</li>
+    <li>🧠 Data Modeling and DAX Calculations</li>
+    <li>📊 Report Design and Visualization Best Practices</li>
+    <li>☁ Deployment to Power BI Service</li>
+    <li>🔐 Row-Level Security Implementation</li>
+    <li>🔄 Refresh Scheduling using Gateways</li>
+    <li>💡 Power BI Tips & Performance Optimization</li>
+  </ul>
 
-        <h3>2. Transform the Data (Power Query)</h3>
-        <ul>
-            <li>Click <strong>Transform Data</strong></li>
-            <li>Ensure data types are correct</li>
-            <li>Remove duplicates, handle missing values</li>
-            <li>Create a <code>Total Sales</code> column: <code>= [Quantity] * [Price]</code></li>
-            <li>Close & Apply</li>
-        </ul>
+  <hr>
 
-        <h3>3. Build the Data Model</h3>
-        <ul>
-            <li>Identify relationships if you have multiple tables</li>
-            <li>Use <strong>Manage Relationships</strong> if necessary</li>
-        </ul>
 
-        <h3>4. Create Visualizations</h3>
-        <ul>
-            <li>Bar chart: Sales by Region</li>
-            <li>Line chart: Sales over time</li>
-            <li>Table: Top 10 Products</li>
-            <li>Slicer: Filter by Customer or Region</li>
-        </ul>
 
-        <h3>5. Write DAX Measures</h3>
-        <ul>
-            <li><code>Total Sales = SUM(SalesData[Sales])</code></li>
-            <li><code>Avg Sales = AVERAGE(SalesData[Sales])</code></li>
-            <li><code>Sales Growth % = DIVIDE([Total Sales] - [Previous Sales], [Previous Sales])</code></li>
-        </ul>
+  <hr>
 
-        <h3>6. Format the Report</h3>
-        <ul>
-            <li>Use themes, consistent fonts, and colors</li>
-            <li>Add a logo or title</li>
-            <li>Make interactive with bookmarks, tooltips, and drill-through</li>
-        </ul>
+  <h2>🔧 Technologies Used</h2>
+  <ul>
+    <li>Power BI Desktop</li>
+    <li>Power BI Service (Cloud)</li>
+    <li>Power Query M Language</li>
+    <li>DAX (Data Analysis Expressions)</li>
+    <li>Microsoft SQL Server / Excel / Web APIs</li>
+  </ul>
 
-        <h3>7. Publish to Power BI Service</h3>
-        <ul>
-            <li>Click <strong>File → Publish → To Power BI</strong></li>
-            <li>Select your workspace</li>
-            <li>Go to <a href="https://app.powerbi.com" target="_blank">Power BI Service</a></li>
-        </ul>
+  <hr>
 
-        <h3>8. Share the Report</h3>
-        <ul>
-            <li>Click <strong>Share</strong> in the Power BI Service</li>
-            <li>Set user permissions</li>
-            <li>Optionally, embed into a website or Teams</li>
-        </ul>
+  <h2>📦 Module Steps</h2>
+  <ol>
+    <li><strong>Connect to Data Sources:</strong> Import data from Excel, SQL Server, or REST APIs.</li>
+    <li><strong>Transform Data:</strong> Use Power Query to clean, filter, merge, and reshape datasets.</li>
+    <li><strong>Data Modeling:</strong> Create relationships and define calculated columns and measures using DAX.</li>
+    <li><strong>Report Design:</strong> Build interactive reports with slicers, visuals, themes, and bookmarks.</li>
+    <li><strong>Apply Row-Level Security:</strong> Restrict data visibility based on user roles.</li>
+    <li><strong>Publish to Power BI Service:</strong> Share reports in a workspace, configure refresh schedules using a gateway.</li>
+  </ol>
 
-        <h2>📘 Additional Resources</h2>
-        <ul>
-            <li><a href="https://learn.microsoft.com/en-us/power-bi/" target="_blank">Power BI Documentation</a></li>
-            <li><a href="https://community.powerbi.com/" target="_blank">Power BI Community</a></li>
-            <li><a href="https://www.youtube.com/user/mspowerbi" target="_blank">Power BI YouTube Channel</a></li>
-        </ul>
+  <hr>
 
-        <h2>✅ Module Outcomes</h2>
-        <p>By completing this module, you will be able to:</p>
-        <ul>
-            <li>Load and clean data in Power BI</li>
-            <li>Design a star schema model</li>
-            <li>Write basic and advanced DAX measures</li>
-            <li>Create rich, interactive reports</li>
-            <li>Publish and share your work with others</li>
-        </ul>
+  <h2>📸 Screenshots</h2>
+  <p>Add screenshots of your Power BI report here to showcase visualizations and interactivity.</p>
 
-        <hr>
-        <p><strong>Author:</strong> Your Name | <strong>Contact:</strong> your.email@example.com</p>
-        <p>&copy; 2025 Power BI Learning Module</p>
-    </div>
+  <hr>
+
+  <h2>📚 Resources</h2>
+  <ul>
+    <li><a href="https://learn.microsoft.com/en-us/power-bi/">Power BI Documentation</a></li>
+    <li><a href="https://docs.microsoft.com/en-us/power-bi/guidance/">Power BI Best Practices</a></li>
+    <li><a href="https://community.powerbi.com/">Power BI Community</a></li>
+  </ul>
+
+  <hr>
+
+  <h2>📝 License</h2>
+  <p>This project is open-source and available under the MIT License.</p>
+
 </body>
 </html>
